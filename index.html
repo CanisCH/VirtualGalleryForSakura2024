@@ -11,13 +11,16 @@
     <script src="js/aframe-environment-component.min.js"></script>
   </head>
 <body>
-    <!-- <a-scene stats> -->
-    <a-scene renderer="colorManagement: true">
+    <!--<a-scene stats> </a-scene> -->
+    <a-scene stats renderer="colorManagement: true">
     <!-- environment="preset: default; skyType: atmosphere; skyColor: #66D; lighting: none; lightPosition: 0 1 1" -->
       <a-assets>
-        <a-asset-item id="navmesh" src="mesh/gallery try 5 baked collision.glb"></a-asset-item>
-        <a-asset-item id="room1" src="mesh/gallery try 5 baked.glb"></a-asset-item>
-        <a-asset-item id="sky" src="mesh/gallery try 5 baked sky.glb"></a-asset-item>
+        <a-asset-item id="navmesh" src="mesh/collision.gltf"></a-asset-item>
+        <a-asset-item id="room1" src="mesh/entrance.gltf"></a-asset-item>
+        <a-asset-item id="room2" src="mesh/hallway.gltf"></a-asset-item>
+        <a-asset-item id="room3" src="mesh/round.gltf"></a-asset-item>
+        <a-asset-item id="room4" src="mesh/last.gltf"></a-asset-item>
+        <a-asset-item id="basic" src="mesh/floor and ceiling.gltf"></a-asset-item>
       </a-assets>
 
       <!-- Player. -->
@@ -26,7 +29,7 @@
                                    controls: checkpoint, gamepad, trackpad, keyboard, nipple;"
                 position="0 0 8">
         <a-entity camera
-                  position="0 3 0"
+                  position="0 3.9 0"
                   look-controls="pointerLockEnabled: true">
           <a-cursor></a-cursor>
         </a-entity>
@@ -36,18 +39,30 @@
       <a-entity nav-mesh
                 normal-material
                 visible="false"
-                position="0 0 0"
+                position="30 0 -54"
                 scale="3 3 3"
                 gltf-model="#navmesh"></a-entity>
 
       <!-- Scene. -->
-      <a-entity position="0 0.1 0"
+      <a-entity position="30 0 -54"
                 scale="3 3 3"
                 gltf-model="#room1">
       </a-entity>
-      <a-entity position="0 0.1 0"
+      <a-entity position="30 0 -54"
                 scale="3 3 3"
-                gltf-model="#sky">
+                gltf-model="#room2">
+      </a-entity>
+      <a-entity position="30 0 -54"
+                scale="3 3 3"
+                gltf-model="#room3">
+      </a-entity>
+      <a-entity position="30 0 -54"
+                scale="3 3 3"
+                gltf-model="#room4">
+      </a-entity>
+      <a-entity position="30 0 -54"
+                scale="3 3 3"
+                gltf-model="#basic">
       </a-entity>
     </a-scene>
   </body>
