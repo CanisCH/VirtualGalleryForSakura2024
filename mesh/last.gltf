@@ -4,9 +4,7 @@
 		"version":"2.0"
 	},
 	"extensionsUsed":[
-		"KHR_materials_emissive_strength",
-		"KHR_materials_specular",
-		"KHR_materials_ior"
+		"KHR_materials_emissive_strength"
 	],
 	"scene":0,
 	"scenes":[
@@ -658,29 +656,6 @@
 		},
 		{
 			"doubleSided":true,
-			"extensions":{
-				"KHR_materials_specular":{
-					"specularFactor":0
-				},
-				"KHR_materials_ior":{
-					"ior":1.4500000476837158
-				}
-			},
-			"name":"frame 1.001",
-			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.8899915814399719,
-					0.8899915814399719,
-					0.8899915814399719,
-					1
-				],
-				"metallicFactor":0,
-				"roughnessFactor":0.5
-			}
-		},
-		{
-			"alphaMode":"BLEND",
-			"doubleSided":true,
 			"emissiveFactor":[
 				1,
 				1,
@@ -689,7 +664,7 @@
 			"emissiveTexture":{
 				"index":21
 			},
-			"name":"\u54b2\u6a02 - \u5289\u701a\u5143.001",
+			"name":"frame 1.001",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
 					0,
@@ -697,20 +672,6 @@
 					0,
 					1
 				]
-			}
-		},
-		{
-			"doubleSided":true,
-			"name":"frame 2.001",
-			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.800000011920929,
-					0.800000011920929,
-					0.800000011920929,
-					1
-				],
-				"metallicFactor":0,
-				"roughnessFactor":0.5
 			}
 		},
 		{
@@ -724,6 +685,47 @@
 			"emissiveTexture":{
 				"index":22
 			},
+			"name":"\u54b2\u6a02 - \u5289\u701a\u5143.001",
+			"pbrMetallicRoughness":{
+				"baseColorFactor":[
+					0,
+					0,
+					0,
+					1
+				]
+			}
+		},
+		{
+			"doubleSided":true,
+			"emissiveFactor":[
+				1,
+				1,
+				1
+			],
+			"emissiveTexture":{
+				"index":23
+			},
+			"name":"frame 2.001",
+			"pbrMetallicRoughness":{
+				"baseColorFactor":[
+					0,
+					0,
+					0,
+					1
+				]
+			}
+		},
+		{
+			"alphaMode":"BLEND",
+			"doubleSided":true,
+			"emissiveFactor":[
+				1,
+				1,
+				1
+			],
+			"emissiveTexture":{
+				"index":24
+			},
 			"name":"\u54b2\u6a02-\u751f\u65e5\u795d\u798f - \u7126\u7cd6.001",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
@@ -736,16 +738,22 @@
 		},
 		{
 			"doubleSided":true,
+			"emissiveFactor":[
+				1,
+				1,
+				1
+			],
+			"emissiveTexture":{
+				"index":25
+			},
 			"name":"frame 3.001",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0.800000011920929,
-					0.800000011920929,
-					0.800000011920929,
+					0,
+					0,
+					0,
 					1
-				],
-				"metallicFactor":0,
-				"roughnessFactor":0.5
+				]
 			}
 		}
 	],
@@ -1090,6 +1098,18 @@
 		{
 			"sampler":0,
 			"source":13
+		},
+		{
+			"sampler":0,
+			"source":14
+		},
+		{
+			"sampler":0,
+			"source":15
+		},
+		{
+			"sampler":0,
+			"source":16
 		}
 	],
 	"images":[
@@ -1155,13 +1175,28 @@
 		},
 		{
 			"mimeType":"image/png",
+			"name":"frame 1",
+			"uri":"frame%201.png"
+		},
+		{
+			"mimeType":"image/png",
 			"name":"letter han yuan",
 			"uri":"letter%20han%20yuan.png"
 		},
 		{
 			"mimeType":"image/png",
+			"name":"frame 2",
+			"uri":"frame%202.png"
+		},
+		{
+			"mimeType":"image/png",
 			"name":"letter jiaotang",
 			"uri":"letter%20jiaotang.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"frame 3",
+			"uri":"frame%203.png"
 		}
 	],
 	"accessors":[
