@@ -4,7 +4,9 @@
 		"version":"2.0"
 	},
 	"extensionsUsed":[
-		"KHR_materials_emissive_strength"
+		"KHR_materials_emissive_strength",
+		"KHR_materials_specular",
+		"KHR_materials_ior"
 	],
 	"scene":0,
 	"scenes":[
@@ -12,7 +14,8 @@
 			"name":"Scene",
 			"nodes":[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -26,14 +29,28 @@
 				3.014090061187744
 			],
 			"translation":[
-				0.10962140560150146,
+				-0.22346541285514832,
 				7.275538444519043,
 				-0.05716067552566528
 			]
 		},
 		{
 			"mesh":1,
-			"name":"sakura tree trunk"
+			"name":"sakura tree trunk",
+			"translation":[
+				-0.3330868184566498,
+				0,
+				0
+			]
+		},
+		{
+			"mesh":2,
+			"name":"grass",
+			"scale":[
+				0.5,
+				0.5,
+				0.5
+			]
 		}
 	],
 	"materials":[
@@ -50,11 +67,17 @@
 			},
 			"extensions":{
 				"KHR_materials_emissive_strength":{
-					"emissiveStrength":3
+					"emissiveStrength":1.6
 				}
 			},
 			"name":"sakura tree top",
 			"pbrMetallicRoughness":{
+				"baseColorFactor":[
+					0,
+					0,
+					0,
+					1
+				],
 				"baseColorTexture":{
 					"index":1
 				},
@@ -82,6 +105,40 @@
 				],
 				"baseColorTexture":{
 					"index":3
+				},
+				"metallicFactor":0,
+				"roughnessFactor":0.5
+			}
+		},
+		{
+			"alphaMode":"BLEND",
+			"doubleSided":true,
+			"emissiveFactor":[
+				1,
+				1,
+				1
+			],
+			"emissiveTexture":{
+				"index":4
+			},
+			"extensions":{
+				"KHR_materials_specular":{
+					"specularFactor":0
+				},
+				"KHR_materials_ior":{
+					"ior":1.4500000476837158
+				}
+			},
+			"name":"grass",
+			"pbrMetallicRoughness":{
+				"baseColorFactor":[
+					0,
+					0,
+					0,
+					1
+				],
+				"baseColorTexture":{
+					"index":5
 				},
 				"metallicFactor":0,
 				"roughnessFactor":0.5
@@ -116,6 +173,20 @@
 					"material":1
 				}
 			]
+		},
+		{
+			"name":"Plane.002",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":8,
+						"NORMAL":9,
+						"TEXCOORD_0":10
+					},
+					"indices":11,
+					"material":2
+				}
+			]
 		}
 	],
 	"textures":[
@@ -134,6 +205,14 @@
 		{
 			"sampler":0,
 			"source":1
+		},
+		{
+			"sampler":0,
+			"source":2
+		},
+		{
+			"sampler":0,
+			"source":2
 		}
 	],
 	"images":[
@@ -146,6 +225,11 @@
 			"mimeType":"image/png",
 			"name":"tree trunk bake",
 			"uri":"tree%20trunk%20bake.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"grass",
+			"uri":"grass.png"
 		}
 	],
 	"accessors":[
@@ -194,7 +278,7 @@
 			],
 			"min":[
 				-3.2568857669830322,
-				-1.109265685081482,
+				-1.0957568883895874,
 				-2.7204387187957764
 			],
 			"type":"VEC3"
@@ -215,6 +299,40 @@
 			"bufferView":7,
 			"componentType":5123,
 			"count":1776,
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":8,
+			"componentType":5126,
+			"count":9585,
+			"max":[
+				3.500000476837158,
+				0.6000000238418579,
+				3.500000476837158
+			],
+			"min":[
+				-3.500000476837158,
+				0,
+				-3.500000476837158
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":9,
+			"componentType":5126,
+			"count":9585,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":10,
+			"componentType":5126,
+			"count":9585,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":11,
+			"componentType":5123,
+			"count":14910,
 			"type":"SCALAR"
 		}
 	],
@@ -266,6 +384,30 @@
 			"byteLength":3552,
 			"byteOffset":326432,
 			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":115020,
+			"byteOffset":329984,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":115020,
+			"byteOffset":445004,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":76680,
+			"byteOffset":560024,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":29820,
+			"byteOffset":636704,
+			"target":34963
 		}
 	],
 	"samplers":[
@@ -276,7 +418,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":329984,
+			"byteLength":666524,
 			"uri":"sakura%20tree.bin"
 		}
 	]
