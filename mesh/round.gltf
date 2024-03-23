@@ -2415,7 +2415,7 @@
 			"source":0
 		},
 		{
-			"sampler":0,
+			"sampler":1,
 			"source":1
 		},
 		{
@@ -2467,11 +2467,11 @@
 			"source":13
 		},
 		{
-			"sampler":0,
+			"sampler":1,
 			"source":14
 		},
 		{
-			"sampler":0,
+			"sampler":1,
 			"source":15
 		},
 		{
@@ -2595,8 +2595,8 @@
 		},
 		{
 			"mimeType":"image/png",
-			"name":"round ceiling",
-			"uri":"round%20ceiling.png"
+			"name":"round ceiling 2",
+			"uri":"round%20ceiling%202.png"
 		},
 		{
 			"mimeType":"image/png",
