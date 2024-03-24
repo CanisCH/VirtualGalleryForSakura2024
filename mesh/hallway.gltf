@@ -47,7 +47,8 @@
 				32,
 				33,
 				34,
-				35
+				35,
+				36
 			]
 		}
 	],
@@ -521,6 +522,26 @@
 				-10,
 				-0.20000000298023224,
 				8
+			]
+		},
+		{
+			"mesh":28,
+			"name":"cat hand ",
+			"rotation":[
+				0,
+				-1,
+				0,
+				1.6292068494294654e-07
+			],
+			"scale":[
+				0.2564159631729126,
+				0.2564159631729126,
+				0.2564159631729126
+			],
+			"translation":[
+				-12.53394889831543,
+				1.275611162185669,
+				2.022914171218872
 			]
 		}
 	],
@@ -1112,6 +1133,46 @@
 					1
 				]
 			}
+		},
+		{
+			"doubleSided":true,
+			"emissiveFactor":[
+				1,
+				1,
+				1
+			],
+			"emissiveTexture":{
+				"index":28
+			},
+			"name":"cat hand white",
+			"pbrMetallicRoughness":{
+				"baseColorFactor":[
+					0,
+					0,
+					0,
+					1
+				]
+			}
+		},
+		{
+			"doubleSided":true,
+			"emissiveFactor":[
+				1,
+				1,
+				1
+			],
+			"emissiveTexture":{
+				"index":29
+			},
+			"name":"cat hand pink",
+			"pbrMetallicRoughness":{
+				"baseColorFactor":[
+					0,
+					0,
+					0,
+					1
+				]
+			}
 		}
 	],
 	"meshes":[
@@ -1516,6 +1577,29 @@
 					"material":28
 				}
 			]
+		},
+		{
+			"name":"Circle.036",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":108,
+						"NORMAL":109,
+						"TEXCOORD_0":110
+					},
+					"indices":111,
+					"material":29
+				},
+				{
+					"attributes":{
+						"POSITION":112,
+						"NORMAL":113,
+						"TEXCOORD_0":114
+					},
+					"indices":115,
+					"material":30
+				}
+			]
 		}
 	],
 	"textures":[
@@ -1630,6 +1714,14 @@
 		{
 			"sampler":0,
 			"source":27
+		},
+		{
+			"sampler":0,
+			"source":28
+		},
+		{
+			"sampler":1,
+			"source":28
 		}
 	],
 	"images":[
@@ -1680,8 +1772,8 @@
 		},
 		{
 			"mimeType":"image/png",
-			"name":"wall hallway 9",
-			"uri":"wall%20hallway%209.png"
+			"name":"wall hallway 9 for cat",
+			"uri":"wall%20hallway%209%20for%20cat.png"
 		},
 		{
 			"mimeType":"image/png",
@@ -1772,6 +1864,11 @@
 			"mimeType":"image/png",
 			"name":"paint hallway 9",
 			"uri":"paint%20hallway%209.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"cat hand",
+			"uri":"cat%20hand.png"
 		}
 	],
 	"accessors":[
@@ -2712,6 +2809,74 @@
 			"componentType":5123,
 			"count":30,
 			"type":"SCALAR"
+		},
+		{
+			"bufferView":108,
+			"componentType":5126,
+			"count":1264,
+			"max":[
+				0.4447730481624603,
+				0.4871271550655365,
+				0.22744067013263702
+			],
+			"min":[
+				-2.0837416648864746,
+				-0.3006957173347473,
+				-0.004972335882484913
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":109,
+			"componentType":5126,
+			"count":1264,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":110,
+			"componentType":5126,
+			"count":1264,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":111,
+			"componentType":5123,
+			"count":7080,
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":112,
+			"componentType":5126,
+			"count":966,
+			"max":[
+				0.38019898533821106,
+				0.3893458843231201,
+				0.23822616040706635
+			],
+			"min":[
+				-2.025968551635742,
+				-0.21827645599842072,
+				0.12778069078922272
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":113,
+			"componentType":5126,
+			"count":966,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":114,
+			"componentType":5126,
+			"count":966,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":115,
+			"componentType":5123,
+			"count":5112,
+			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
@@ -3362,6 +3527,54 @@
 			"byteLength":60,
 			"byteOffset":76736,
 			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":15168,
+			"byteOffset":76796,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":15168,
+			"byteOffset":91964,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":10112,
+			"byteOffset":107132,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":14160,
+			"byteOffset":117244,
+			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":11592,
+			"byteOffset":131404,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":11592,
+			"byteOffset":142996,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":7728,
+			"byteOffset":154588,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":10224,
+			"byteOffset":162316,
+			"target":34963
 		}
 	],
 	"samplers":[
@@ -3378,7 +3591,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":76796,
+			"byteLength":172540,
 			"uri":"hallway.bin"
 		}
 	]

@@ -15,12 +15,12 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"collision ver3"
+			"name":"collision ver4"
 		}
 	],
 	"meshes":[
 		{
-			"name":"Circle.043",
+			"name":"Circle.045",
 			"primitives":[
 				{
 					"attributes":{
@@ -37,7 +37,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":390,
+			"count":680,
 			"max":[
 				9.600000381469727,
 				1,
@@ -53,51 +53,51 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":390,
+			"count":680,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":390,
+			"count":680,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":708,
+			"count":1236,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":4680,
+			"byteLength":8160,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":4680,
-			"byteOffset":4680,
+			"byteLength":8160,
+			"byteOffset":8160,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":3120,
-			"byteOffset":9360,
+			"byteLength":5440,
+			"byteOffset":16320,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":1416,
-			"byteOffset":12480,
+			"byteLength":2472,
+			"byteOffset":21760,
 			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":13896,
+			"byteLength":24232,
 			"uri":"collision.bin"
 		}
 	]

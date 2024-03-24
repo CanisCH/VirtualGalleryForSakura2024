@@ -3,6 +3,10 @@
 		"generator":"Khronos glTF Blender I/O v4.0.44",
 		"version":"2.0"
 	},
+	"extensionsUsed":[
+		"KHR_materials_specular",
+		"KHR_materials_ior"
+	],
 	"scene":0,
 	"scenes":[
 		{
@@ -11,7 +15,8 @@
 				0,
 				1,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -50,11 +55,25 @@
 		},
 		{
 			"mesh":3,
-			"name":"sky cube",
+			"name":"brown_mud_leaves_01_diff_1k",
 			"scale":[
-				100,
-				100,
-				100
+				4,
+				4,
+				4
+			],
+			"translation":[
+				0,
+				-0.20000000298023224,
+				0
+			]
+		},
+		{
+			"mesh":4,
+			"name":"Sphere",
+			"scale":[
+				120.00000762939453,
+				120.00000762939453,
+				120.00000762939453
 			]
 		}
 	],
@@ -120,6 +139,26 @@
 			}
 		},
 		{
+			"alphaMode":"BLEND",
+			"doubleSided":true,
+			"extensions":{
+				"KHR_materials_specular":{
+					"specularFactor":0
+				},
+				"KHR_materials_ior":{
+					"ior":1.4500000476837158
+				}
+			},
+			"name":"brown_mud_leaves_01_diff_1k",
+			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":3
+				},
+				"metallicFactor":0,
+				"roughnessFactor":0.5
+			}
+		},
+		{
 			"doubleSided":true,
 			"emissiveFactor":[
 				1,
@@ -127,7 +166,7 @@
 				1
 			],
 			"emissiveTexture":{
-				"index":3
+				"index":4
 			},
 			"name":"sky sphere",
 			"pbrMetallicRoughness":{
@@ -184,7 +223,7 @@
 			]
 		},
 		{
-			"name":"Cube.040",
+			"name":"brown_mud_leaves_01_diff_1k",
 			"primitives":[
 				{
 					"attributes":{
@@ -194,6 +233,20 @@
 					},
 					"indices":15,
 					"material":3
+				}
+			]
+		},
+		{
+			"name":"Sphere.001",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":16,
+						"NORMAL":17,
+						"TEXCOORD_0":18
+					},
+					"indices":19,
+					"material":4
 				}
 			]
 		}
@@ -212,8 +265,12 @@
 			"source":2
 		},
 		{
-			"sampler":0,
+			"sampler":1,
 			"source":3
+		},
+		{
+			"sampler":1,
+			"source":4
 		}
 	],
 	"images":[
@@ -231,6 +288,11 @@
 			"mimeType":"image/png",
 			"name":"flat light",
 			"uri":"flat%20light.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"brown_mud_leaves_01_diff_1k",
+			"uri":"brown_mud_leaves_01_diff_1k.png"
 		},
 		{
 			"mimeType":"image/png",
@@ -276,7 +338,7 @@
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":9,
+			"count":189,
 			"max":[
 				21.25,
 				0,
@@ -284,7 +346,7 @@
 			],
 			"min":[
 				-20,
-				0,
+				-0.375,
 				-21.25
 			],
 			"type":"VEC3"
@@ -292,25 +354,25 @@
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":9,
+			"count":189,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":9,
+			"count":189,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":7,
 			"componentType":5123,
-			"count":24,
+			"count":354,
 			"type":"SCALAR"
 		},
 		{
 			"bufferView":8,
 			"componentType":5126,
-			"count":1656,
+			"count":1692,
 			"max":[
 				10.19999885559082,
 				-2.28881845032447e-06,
@@ -326,13 +388,13 @@
 		{
 			"bufferView":9,
 			"componentType":5126,
-			"count":1656,
+			"count":1692,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":10,
 			"componentType":5126,
-			"count":1656,
+			"count":1692,
 			"type":"VEC2"
 		},
 		{
@@ -344,35 +406,69 @@
 		{
 			"bufferView":12,
 			"componentType":5126,
-			"count":20,
+			"count":4,
 			"max":[
-				1,
-				1,
-				1
+				0.5,
+				0,
+				0.5
 			],
 			"min":[
-				-1,
+				-0.5,
 				0,
-				-1
+				-0.5
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":13,
 			"componentType":5126,
-			"count":20,
+			"count":4,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":14,
 			"componentType":5126,
-			"count":20,
+			"count":4,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":15,
 			"componentType":5123,
-			"count":30,
+			"count":6,
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":16,
+			"componentType":5126,
+			"count":240,
+			"max":[
+				0.9925460815429688,
+				1,
+				0.992546021938324
+			],
+			"min":[
+				-0.9925461411476135,
+				0,
+				-0.9925461411476135
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":17,
+			"componentType":5126,
+			"count":240,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":18,
+			"componentType":5126,
+			"count":240,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":19,
+			"componentType":5123,
+			"count":336,
 			"type":"SCALAR"
 		}
 	],
@@ -403,74 +499,98 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":108,
+			"byteLength":2268,
 			"byteOffset":1052,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":108,
-			"byteOffset":1160,
+			"byteLength":2268,
+			"byteOffset":3320,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":72,
-			"byteOffset":1268,
+			"byteLength":1512,
+			"byteOffset":5588,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":48,
-			"byteOffset":1340,
+			"byteLength":708,
+			"byteOffset":7100,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":19872,
-			"byteOffset":1388,
+			"byteLength":20304,
+			"byteOffset":7808,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":19872,
-			"byteOffset":21260,
+			"byteLength":20304,
+			"byteOffset":28112,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":13248,
-			"byteOffset":41132,
+			"byteLength":13536,
+			"byteOffset":48416,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":14628,
-			"byteOffset":54380,
+			"byteOffset":61952,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":240,
-			"byteOffset":69008,
+			"byteLength":48,
+			"byteOffset":76580,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":240,
-			"byteOffset":69248,
+			"byteLength":48,
+			"byteOffset":76628,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":160,
-			"byteOffset":69488,
+			"byteLength":32,
+			"byteOffset":76676,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":60,
-			"byteOffset":69648,
+			"byteLength":12,
+			"byteOffset":76708,
+			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":2880,
+			"byteOffset":76720,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":2880,
+			"byteOffset":79600,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":1920,
+			"byteOffset":82480,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":672,
+			"byteOffset":84400,
 			"target":34963
 		}
 	],
@@ -478,11 +598,17 @@
 		{
 			"magFilter":9729,
 			"minFilter":9987
+		},
+		{
+			"magFilter":9729,
+			"minFilter":9987,
+			"wrapS":33071,
+			"wrapT":33071
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":69708,
+			"byteLength":85072,
 			"uri":"floor%20and%20ceiling.bin"
 		}
 	]
