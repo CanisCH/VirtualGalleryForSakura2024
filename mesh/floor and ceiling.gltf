@@ -16,7 +16,8 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
@@ -74,6 +75,21 @@
 				120.00000762939453,
 				120.00000762939453,
 				120.00000762939453
+			]
+		},
+		{
+			"mesh":5,
+			"name":"credits 3",
+			"rotation":[
+				0.5,
+				0.5,
+				-0.5,
+				0.5
+			],
+			"translation":[
+				-6.789999961853027,
+				1.2999999523162842,
+				14
 			]
 		}
 	],
@@ -177,6 +193,26 @@
 					1
 				]
 			}
+		},
+		{
+			"alphaMode":"BLEND",
+			"doubleSided":true,
+			"emissiveFactor":[
+				1,
+				1,
+				1
+			],
+			"emissiveTexture":{
+				"index":5
+			},
+			"name":"credits 3",
+			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":6
+				},
+				"metallicFactor":0,
+				"roughnessFactor":0.5
+			}
 		}
 	],
 	"meshes":[
@@ -249,6 +285,20 @@
 					"material":4
 				}
 			]
+		},
+		{
+			"name":"credits 3",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":20,
+						"NORMAL":21,
+						"TEXCOORD_0":22
+					},
+					"indices":23,
+					"material":5
+				}
+			]
 		}
 	],
 	"textures":[
@@ -271,6 +321,14 @@
 		{
 			"sampler":1,
 			"source":4
+		},
+		{
+			"sampler":1,
+			"source":5
+		},
+		{
+			"sampler":1,
+			"source":5
 		}
 	],
 	"images":[
@@ -298,6 +356,11 @@
 			"mimeType":"image/png",
 			"name":"sky",
 			"uri":"sky.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"credits 3",
+			"uri":"credits%203.png"
 		}
 	],
 	"accessors":[
@@ -470,6 +533,40 @@
 			"componentType":5123,
 			"count":336,
 			"type":"SCALAR"
+		},
+		{
+			"bufferView":20,
+			"componentType":5126,
+			"count":4,
+			"max":[
+				0.75,
+				0,
+				0.5
+			],
+			"min":[
+				-0.75,
+				0,
+				-0.5
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":21,
+			"componentType":5126,
+			"count":4,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":22,
+			"componentType":5126,
+			"count":4,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":23,
+			"componentType":5123,
+			"count":6,
+			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
@@ -592,6 +689,30 @@
 			"byteLength":672,
 			"byteOffset":84400,
 			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":48,
+			"byteOffset":85072,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":48,
+			"byteOffset":85120,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":32,
+			"byteOffset":85168,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":12,
+			"byteOffset":85200,
+			"target":34963
 		}
 	],
 	"samplers":[
@@ -608,7 +729,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":85072,
+			"byteLength":85212,
 			"uri":"floor%20and%20ceiling.bin"
 		}
 	]
